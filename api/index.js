@@ -16,7 +16,10 @@ dotenv.config();
 
 dbConnect();
 
-
+app.get("/",(req,res)=>{
+res.send("hello");
+}
+        )
 
 app.listen(PORT, () => {
   console.log("Server is running at port:", PORT);
